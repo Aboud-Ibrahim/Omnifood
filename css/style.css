@@ -1,0 +1,456 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    font-family: 'Lato';
+    scroll-behavior: smooth;
+}
+
+header {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../images/hero.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.logo {
+    float: left;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 50px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.main-nav li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.main-nav li a:hover {
+    color: tomato;
+}
+
+.hero-box {
+    position: absolute;
+    top: 40%;
+}
+
+h1 {
+    color: #fff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    line-height: 150%;
+    margin-bottom: 30px;
+}
+
+.btn {
+    font-weight: bold;
+    border: solid orange 1px;
+    margin-right: 15px;
+    color: orange;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    background-color: orange;
+    color: white;
+}
+
+section {
+    padding: 40px 0px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 5px;
+    background-color: orange;
+    margin: 20px auto;
+    border-radius: 6px;
+}
+
+/* hr{
+    width: 100px;
+    background-color: orange;
+    border: solid orange 2px;
+    margin: 20px auto;
+    border-radius: 6px;
+} */
+
+.features-desc {
+    width: 60%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.box {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.box i {
+    color: orange;
+    /* margin-left: 50px; */
+    margin-bottom: 15px;
+}
+
+.box h3 {
+    margin-bottom: 10px;
+}
+
+.box p {
+    line-height: 150%;
+}
+
+.meal {
+    padding: 0;
+    background-color: black;
+    overflow: hidden;
+}
+
+.meal img {
+    width: 100%;
+    opacity: 0.6;
+    transition: 1s;
+    transform: scale(1.150);
+}
+
+.meal img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+#works {
+    background-color: #eee;
+}
+
+.left-work {
+    text-align: right;
+    padding-right: 3%;
+}
+
+.app-iPhone {
+    margin-top: 20px;
+    width: 40%;
+}
+
+.right-work {
+    text-align: left;
+    padding-right: 3%;
+    padding-top: 90px;
+}
+
+.step {
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.step div {
+    margin-right: 20px;
+    /* display: inline-block; */
+    width: 50px;
+    height: 50px;
+    border: orange solid 3px;
+    padding: 13px;
+    border-radius: 100%;
+    text-align: center;
+    color: orange;
+    font-weight: bold;
+}
+
+.brands {
+    margin-top: 50px;
+}
+
+.brands a {
+    margin-right: 15px;
+}
+
+.brands img {
+    height: 50px;
+}
+
+.city img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.city h3 {
+    margin-bottom: 20px;
+}
+
+.city-info {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.city-info i {
+    color: orange;
+    margin-right: 20px;
+}
+
+#testimonials {
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../images/back-customers.jpg);
+    background-position:center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#testimonials i{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 20px;
+    /* margin-left: -50px; */
+    transform: rotate(180deg);
+}
+
+#testimonials p{
+    margin-bottom: 20px;
+    line-height: 150%;
+}
+
+#testimonials img{
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+#pricing{
+    background-color: #F4F4F4;
+    padding-bottom: 100px;
+
+}
+
+.card{
+    margin: auto;
+    width: 25%;
+    border-radius: 10px;
+}
+
+.fst{
+    background-color: #FCFCFC;
+    border-bottom: rgb(196, 196, 196) solid 1px;
+}
+
+.fst .cat{
+    padding: 7px 0 0 7px;
+    text-transform: uppercase;
+    margin-bottom: 5px; 
+}
+
+.fst .PRC{
+    font-family: 'Lato', sans-serif;
+    color: orange;
+    font-size: 60px;
+    font-weight: lighter;
+    padding: 5px 0 0 10px;
+
+}
+
+.fst span{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.fst .m-prc{
+    color: #333;
+    font-weight: bold;
+    padding: 5px 0 12px 6px;
+}
+
+.snd{
+    background-color: white;
+    padding: 10px;
+    border-bottom: rgb(196, 196, 196) solid 1px;
+
+    
+}
+
+.price-plan{
+    display: flex;
+    padding-bottom: 7px;
+    line-height: 20px;
+}
+
+.price-plan i{
+    line-height: 20px;
+    vertical-align: middle;
+    padding-right: 15px;
+    color: orange;
+    font-size: 5px;
+}
+.price-plan p{
+    line-height: 20px;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+.trd{
+    background-color: #FCFCFC;
+    padding: 15px 0 15px;
+}
+
+.trd .p-btn{
+    width: fit-content;
+    transform: translateX(50%);
+    border: solid orange 1px;
+    margin-right: 15px;
+    color: orange;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+.trd .p-btn:hover{
+    background-color: orange;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+label{
+    font-size: 20px;
+    /* color: red; */
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+input[type=text], input[type=email], select, textarea{
+    width: 85%;
+    padding: 7px;
+    border: solid #ccc 2px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+} 
+
+input[type=checkbox]{
+    margin-bottom: 15px;
+    margin-right: 10px;
+    font-weight: bold;
+
+} 
+
+.f-btn{
+    
+    font-size: 1.1rem;
+    border: solid orange 1px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: orange;
+    color: white;
+}
+
+.f-btn:hover{
+    background-color: transparent;
+    color: orange;
+}
+
+
+footer{
+    background-color: #333;
+    padding: 20px 0px;
+
+}
+
+footer p{
+    margin-top: 20px;
+    color: #888;
+    text-align: center;
+}
+
+.footer-nav , .social-nav{
+    float: left;
+    list-style: none;
+}
+
+.social-nav{
+    float: right;
+}
+
+.footer-nav li , .social-nav li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-nav li a , .social-nav li a{
+    color: #888;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.footer-nav li a:hover , .social-nav li a:hover{
+    color: orangered
+}
+
+.map{
+
+}
+
+.form{
+    padding-top: 30px;
+    background-color: white;
+    opacity: 0.85;
+}
+
